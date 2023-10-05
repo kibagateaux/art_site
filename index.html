@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JINNI</title>
+    <style>
+        
+        body {
+            background-color: pink;
+            font-family: 'Pixelify Sans', sans-serif;
+            /* source https://www.redbubble.com/i/sticker/Pixel-Genie-Lamp-by-PhonoForest/79681001.EJUG5  */
+            /* cursor: url('https://ih1.redbubble.net/image.2417243575.1001/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg'), auto; */
+            cursor: './lamp.png', auto;
+            color: black;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content-container {
+
+        }
+        @media (min-width: 600px) {
+            .content-container {
+                width: 50%;
+            }
+        }
+        .list-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        @media (min-width: 600px) {
+            .list-container {
+                flex-direction: row;
+            }
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            padding-bottom: 3rem;
+        }
+        ul:before {
+            /* content: "👻"; */
+            display: inline-block;
+            width: 1em;
+        }
+        .listicle {
+            flex: 1;
+        }
+        h3 {
+            margin-bottom: 0;
+        }
+        li {
+            display: inline-block;
+            margin-right: 1rem;
+            white-space: nowrap;
+        }
+        li::before {
+            content: "👻";
+            margin-right: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            li {
+                display: block;
+            }
+        }
+        a:link {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #4169E1;
+        }
+    </style>
+    <!-- <script>
+        window.onload = function() {
+            var img = new Image();
+            img.src = 'lamp.png';
+            img.onload = function() {
+                var canvas = document.createElement('canvas');
+                canvas.width = this.naturalWidth;
+                canvas.height = this.naturalHeight;
+                var ctx = canvas.getContext('2d');
+                ctx.drawImage(this, 0, 0);
+                var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                var data = imageData.data;
+                for(var i = 0; i < data.length; i += 4) {
+                    if(data[i + 3] < 128) {
+                        data[i] = 255;
+                        data[i + 1] = 255;
+                        data[i + 2] = 255;
+                        data[i + 3] = 0;
+                    }
+                }
+                ctx.putImageData(imageData, 0, 0);
+                var img = new Image();
+                img.src = canvas.toDataURL();
+                document.body.style.cursor = 'url(' + img.src + '), auto';
+            };
+        };
+    </script> -->
+    
+    
+    <!-- Jinni emoji favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧞‍♀️</text></svg>">
+    <!-- pixel font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content-container">
+
+        <div style="text-align: center;">
+            <h2>🧞‍♂️    🪬</h2>
+            <h1>🧚‍♂️ JINNI 👼</h1>
+            <h2>😇    👻</h2>
+        </div>
+
+        <div class="list-container">
+            <div class="listicle">
+                <h3>About Game</h3>
+                <ul>
+                    <li><a href="https://nootype.substack.com/p/introducing-jinni-a-self-actualization" target="_blank">
+                        Game Intro
+                    </a></li>
+                    <li><a href="privacy-policy.html" target="_blank">
+                        Privacy Policy
+                    </a></li>
+                    <li><a href="https://nootype.substack.com/p/introducing-jinni-a-self-actualization" target="_blank">
+                        Install Android
+                    </a></li>
+                    <li><a href="https://nootype.substack.com/p/introducing-jinni-a-self-actualization" target="_blank">
+                        Install iOS
+                    </a></li>
+                </ul>
+            </div>
+            <div class="listicle">
+                <h3>✨Inspirations✨</h3>
+                <ul>
+                    <li><a href="https://calmtech.com/">
+                        Calm Tech
+                    </a></li>
+                    <li><a href="https://stanfordvr.com/">
+                        Stanford VHIL
+                    </a></li>
+                 
+                    <li><a href="https://en.wikipedia.org/wiki/Gestalt_psychology">
+                        Gestalt Psychology
+                    </a></li>
+                    <li><a href="https://spacestationplaza.com">
+                        Mayan Astrology
+                    </a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Cybernetics">
+                        Cybernetics
+                    </a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Evolutionary_computation">
+                        Evolutionary Computation
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
