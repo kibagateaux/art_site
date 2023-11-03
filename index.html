@@ -9,7 +9,7 @@
             font-family: 'Pixelify Sans', sans-serif;
             /* source https://www.redbubble.com/i/sticker/Pixel-Genie-Lamp-by-PhonoForest/79681001.EJUG5  */
             /* cursor: url('https://ih1.redbubble.net/image.2417243575.1001/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg'), auto; */
-            cursor: './lamp.png', auto;
+            cursor: url('./lamp.png'), auto;
             color: black;
             font-weight: bold;
             display: flex;
@@ -38,6 +38,9 @@
             list-style: none;
             padding-left: 0;
             padding-bottom: 3rem;
+        }
+        h3.list-title {
+            text-align: center;
         }
         ul:before {
             /* content: "👻"; */
@@ -76,7 +79,7 @@
     <!-- <script>
         window.onload = function() {
             var img = new Image();
-            img.src = 'lamp.png';
+            img.src = '/lamp.png';
             img.onload = function() {
                 var canvas = document.createElement('canvas');
                 canvas.width = this.naturalWidth;
@@ -118,7 +121,7 @@
 
         <div class="list-container">
             <div class="listicle">
-                <h3>About Game</h3>
+                <h3 class="list-title">About Game</h3>
                 <ul>
                     <li><a href="https://nootype.substack.com/p/introducing-jinni-a-self-actualization" target="_blank">
                         Game Intro
@@ -126,16 +129,16 @@
                     <li><a href="privacy-policy.html" target="_blank">
                         Privacy Policy
                     </a></li>
-                    <li><a href="https://nootype.substack.com/p/introducing-jinni-a-self-actualization" target="_blank">
+                    <li><a href="https://expo.dev/artifacts/eas/bo7ZwyfT7d6UdNKBcKdUEX.apk" target="_blank">
                         Install Android
                     </a></li>
-                    <li><a href="https://nootype.substack.com/p/introducing-jinni-a-self-actualization" target="_blank">
+                    <li><s><a href="https://nootype.substack.com/p/jinni-single-vs-multi-player-mode" target="_blank">
                         Install iOS
-                    </a></li>
+                    </a></s></li>
                 </ul>
             </div>
             <div class="listicle">
-                <h3>✨Inspirations✨</h3>
+                <h3 class="list-title">✨Inspirations✨</h3>
                 <ul>
                     <li><a href="https://calmtech.com/">
                         Calm Tech
@@ -143,9 +146,11 @@
                     <li><a href="https://stanfordvr.com/">
                         Stanford VHIL
                     </a></li>
-                 
-                    <li><a href="https://en.wikipedia.org/wiki/Gestalt_psychology">
-                        Gestalt Psychology
+                    <li><a href="https://en.wikipedia.org/wiki/Postmodernism">
+                        Post Modernism
+                    </a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Cypherpunk">
+                        Crypto Anarchy
                     </a></li>
                     <li><a href="https://spacestationplaza.com">
                         Mayan Astrology
