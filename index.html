@@ -12,24 +12,33 @@
             cursor: url('./lamp.png'), auto;
             color: black;
             font-weight: bold;
+            font-size: 4.8rem;
+
             display: flex;
             justify-content: center;
+        }
+        
+        @media screen and (min-width: 750px) {
+            body {
+                font-size: 2rem;
+            }
         }
 
         .content-container {
 
         }
-        @media (min-width: 600px) {
+        @media (max-width: 800px) {
             .content-container {
                 width: 50%;
             }
         }
+
         .list-container {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
-        @media (min-width: 600px) {
+        @media (min-width: 800px) {
             .list-container {
                 flex-direction: row;
             }
@@ -76,34 +85,6 @@
             color: #4169E1;
         }
     </style>
-    <!-- <script>
-        window.onload = function() {
-            var img = new Image();
-            img.src = '/lamp.png';
-            img.onload = function() {
-                var canvas = document.createElement('canvas');
-                canvas.width = this.naturalWidth;
-                canvas.height = this.naturalHeight;
-                var ctx = canvas.getContext('2d');
-                ctx.drawImage(this, 0, 0);
-                var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-                var data = imageData.data;
-                for(var i = 0; i < data.length; i += 4) {
-                    if(data[i + 3] < 128) {
-                        data[i] = 255;
-                        data[i + 1] = 255;
-                        data[i + 2] = 255;
-                        data[i + 3] = 0;
-                    }
-                }
-                ctx.putImageData(imageData, 0, 0);
-                var img = new Image();
-                img.src = canvas.toDataURL();
-                document.body.style.cursor = 'url(' + img.src + '), auto';
-            };
-        };
-    </script> -->
-    
     
     <!-- Jinni emoji favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧞‍♀️</text></svg>">
@@ -116,7 +97,7 @@
         <div style="text-align: center;">
             <h2>🧞‍♂️    🪬</h2>
             <h1>🧚‍♂️ JINNI 👼</h1>
-            <h2>😇    👻</h2>
+            <h2>👹    👻</h2>
         </div>
 
         <div class="list-container">
@@ -129,7 +110,7 @@
                     <li><a href="privacy-policy.html" target="_blank">
                         Privacy Policy
                     </a></li>
-                    <li><a href="https://expo.dev/artifacts/eas/bo7ZwyfT7d6UdNKBcKdUEX.apk" target="_blank">
+                    <li><a href="https://expo.dev/artifacts/eas/bYm3ZY6xV4knkNV6dUQGD1.apk" target="_blank">
                         Install Android
                     </a></li>
                     <li><s><a href="https://nootype.substack.com/p/jinni-single-vs-multi-player-mode" target="_blank">
