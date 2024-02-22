@@ -1,0 +1,111 @@
+
+body {
+    background-color: pink;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: thin;
+    cursor: url('./lamp.png'), auto;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 2.5rem;
+}
+h1, h2, h3, h4, .title-display, button {
+    font-weight: bold;
+    font-family: 'Pixelify Sans', serif;
+}
+
+.title-display {
+    font-weight: bold;
+    font-size: 4.2rem;
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        font-size: 1.8rem;
+    }
+}
+
+.content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 2rem;
+}
+
+@media (max-width: 800px) {
+    .content-container {
+        width: 50%;
+    }
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-container * {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 800px) {
+    .list-container {
+        flex-direction: row;
+    }
+}
+.divider {
+    margin: 10% 0;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 3rem;
+}
+h3.list-title {
+    text-align: center;
+}
+ul:before {
+    /* content: "👻"; */
+    display: inline-block;
+    width: 1em;
+}
+.listicle {
+    flex: 1;
+}
+h3 {
+    margin-bottom: 0;
+}
+li {
+    display: inline-block;
+    margin-right: 1rem;
+    white-space: nowrap;
+}
+li::before {
+    content: "👻";
+    margin-right: 0.5rem;
+}
+@media (max-width: 600px) {
+    li {
+        display: block;
+    }
+}
+a:link {
+    color: #4169E1;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #000000;
+}
+
+.cta-button {
+    background-color: #87CEEB;
+    border: none;
+    padding: 20px;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
