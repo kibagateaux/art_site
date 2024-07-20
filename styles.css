@@ -1,6 +1,8 @@
 
 body {
     background-color: pink;
+    /* color: #8a2be2; I like this color, just leaving for alter design*/ 
+
     font-family: 'Montserrat', sans-serif;
     font-weight: thin;
     cursor: url('./lamp.png'), auto;
@@ -101,6 +103,11 @@ a:visited {
     color: #000000;
 }
 
+
+.section { 
+    margin-left: 14%; text-align: center; width: 72%;
+}
+
 .cta-button {
     background-color: #87CEEB;
     border: none;
@@ -109,4 +116,46 @@ a:visited {
     border-radius: 1.5rem;
     font-size: 2.5rem;
     cursor: pointer;
+}
+
+
+/* Cards */
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    /* background-color: #fff; */
+    border: 1px solid #8a2be2;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* cursor: pointer; */
+}
+
+.card-icon {
+    width: 100px;
+    /* height: 100px; */
+    /* margin-bottom: 10px; */
+}
+
+.card h4 {
+    /* font-size: 1.2em; */
+    color: #4b0082;
+    /* margin-bottom: 10px; */
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #333;
 }
