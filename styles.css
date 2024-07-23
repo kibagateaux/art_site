@@ -11,8 +11,14 @@ body {
     display: flex;
     justify-content: center;
 
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
+@media screen and (min-width: 750px) {
+    body {
+        font-size: 1.8em;
+    }
+}
+
 h1, h2, h3, h4, .title-display, button {
     font-weight: bold;
     font-family: 'Pixelify Sans', serif;
@@ -20,20 +26,41 @@ h1, h2, h3, h4, .title-display, button {
 
 .title-display {
     font-weight: bold;
-    font-size: 4.2rem;
+    font-size: 4.2em;
 }
 
-@media screen and (min-width: 750px) {
-    body {
-        font-size: 1.8rem;
-    }
+.logo-container { 
+    margin: 6em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+.community-logo  {
+    margin: 0 2em;
+    width: auto;
+}
+#akiya-logo {
+        /* no logo plain text */
+        color: black;
+        text-decoration: none;
+        /* font-size: 1.8em; */
+}
+#zu-logo {
+    height: 50px;
+}
+#vitalia-logo {
+    height: 20px;
+}
+
+
 
 .content-container {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0 2rem;
+    padding: 0 2em;
 }
 
 @media (max-width: 800px) {
@@ -50,7 +77,7 @@ h1, h2, h3, h4, .title-display, button {
 }
 
 .list-container * {
-    margin: 0.5rem 0;
+    margin: 0.5em 0;
 }
 
 @media (max-width: 800px) {
@@ -64,7 +91,7 @@ h1, h2, h3, h4, .title-display, button {
 ul {
     list-style: none;
     padding-left: 0;
-    padding-bottom: 3rem;
+    padding-bottom: 3em;
 }
 h3.list-title {
     text-align: center;
@@ -76,18 +103,19 @@ ul:before {
 }
 .listicle {
     flex: 1;
+    width: 80%;
 }
 h3 {
     margin-bottom: 0;
 }
 li {
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: 1em;
     white-space: nowrap;
 }
 li::before {
     content: "👻";
-    margin-right: 0.5rem;
+    margin-right: 0.5em;
 }
 @media (max-width: 600px) {
     li {
@@ -113,8 +141,8 @@ a:visited {
     border: none;
     margin: 5vh 0;
     padding: 20px;
-    border-radius: 1.5rem;
-    font-size: 2.5rem;
+    border-radius: 1.5em;
+    font-size: 1.5em;
     cursor: pointer;
 }
 
@@ -156,6 +184,27 @@ a:visited {
 }
 
 .card p {
-    font-size: 0.9em;
+    /* font-size: 0.9em; */
     color: #333;
+}
+
+.meme { 
+}
+
+@media(maxWidtH: "600") {
+}
+
+#god-power {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 5vw;
+}
+
+
+#symbionts {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    /* right: 5vw; */
 }
